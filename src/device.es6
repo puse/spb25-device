@@ -72,7 +72,7 @@ class Device {
 
     // Behave as iterable
     * [Symbol.iterator] () {
-        while (result(this.done))
+        while (!result(this.done))
             yield this.valueOf();
     }
 
