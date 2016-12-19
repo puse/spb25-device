@@ -1,0 +1,38 @@
+{
+  "name": "spb25-device",
+  "version": "1.0.0",
+  "description": "Base class for random devices",
+  "main": "lib/device.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "ava",
+    "pretest": "npm run compile",
+    "compile": "babel src -sd lib/",
+    "prepublish": "npm test"
+  },
+  "author": "Che Oshn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spb25/device.git"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-env": "^1.1.4"
+  },
+  "bugs": {
+    "url": "https://github.com/spb25/device/issues"
+  },
+  "homepage": "https://github.com/spb25/device#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.20.0"
+  },
+  "keywords": [
+    "spb25"
+  ]
+}
